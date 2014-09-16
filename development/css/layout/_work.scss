@@ -13,20 +13,25 @@
 	aside {
 		float: left;
 		margin-right: 5%;
-		width: 70%;
+		width: 50%;
 	}
 	
 	figure {
 		float: right;
-		margin-top: 70px;
 		text-align: right;
-		width: 25%;
+		width: 45%;
+		
+		img {
+			width: auto;
+			max-width: 100%;
+		}
 	}
 	
 	h2 {
 		border-bottom: 1px solid $border-colour;
-		margin-bottom: 0.5em;
+		margin-bottom: 0;
 		padding-bottom: 0.5em;
+		width: 50%;
 	}
 	
 	h3 {

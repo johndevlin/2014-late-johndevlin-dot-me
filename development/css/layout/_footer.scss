@@ -7,8 +7,15 @@ footer {
 		@extend %heading-typeface;
 		font-size: em(12);
 		margin-bottom: 0.5em;
+	-webkit-font-smoothing: auto;
+	font-smoothing: auto;
 		
-		a,
+		a {
+			color: $base-colour;
+			border-width: 1px;
+			border-color: transparent;
+		}
+		
 		a:hover {
 			border-width: 1px;
 		}

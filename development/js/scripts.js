@@ -11,6 +11,30 @@
 	
 */
 
+// Konami code
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function() { 
+	alert('Voilà!'); 
+});
+
+// Moving identity 
+cheet('↑', function() { 
+	$('header h1').addClass('move-on-up-now');
+	
+	setTimeout(function() {
+		$('header h1').removeClass('move-on-up-now');
+	}, 310);
+});
+
+cheet('↓', function() { 
+	$('header h1').addClass('get-on-down');
+	
+	setTimeout(function() {
+		$('header h1').removeClass('get-on-down');
+	}, 310);
+});
+
+
+
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff
