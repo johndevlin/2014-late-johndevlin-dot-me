@@ -7,6 +7,7 @@
 	
 	section{ 
 		@include clearfix;
+		margin-bottom: $vertical-margin;
 	}
 	
 	aside {
@@ -17,6 +18,7 @@
 	
 	figure {
 		float: right;
+		margin-top: 70px;
 		text-align: right;
 		width: 25%;
 	}
