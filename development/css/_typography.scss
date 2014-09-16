@@ -13,7 +13,7 @@ p {
 	color: $body-colour;
 	font-size: em(18);
 	line-height: 1.6;
-	margin: 1.5em 0; 
+	margin: 0 0 25px; 
 }
 
 p a {
@@ -30,19 +30,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: em(72); 
+	font-size: em(65); 
+	line-height: 1.1;
+	margin: 0 0 40px;
 }
 
 h2 {
-	font-size: em(50);
+	font-size: em(40);
 }
 
 h3 {
-	font-size: em(36);
+	font-size: em(32);
 }
 
 h4 {
-	font-size: em(24);
+	font-size: em(22);
 }
 
 h5 {
@@ -52,4 +54,22 @@ h5 {
 h6 {
 	@extend %base-typeface; 
 	font-size: em(18);
+}
+
+blockquote {
+	@extend %light-heading-typeface;
+	border-left: 1px solid $border-color;
+	color: $medium-grey;
+	line-height: 1.7;
+	margin: 0 0 40px; 
+	padding: 0 0 0 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.small-title {
+	@extend %heading-typeface;
+	color: $medium-grey;
+	font-size: em(15);
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }

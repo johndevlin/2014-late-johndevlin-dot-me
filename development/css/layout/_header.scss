@@ -1,28 +1,60 @@
 
+
+.contact-form {
+	display: none;
+}
+
+
 header {
 	padding: 50px $container-padding 0;
-
-	h1 {
-		margin: 0; 
-		text-transform: uppercase;
+	
+	.container {
+		border-bottom: 1px solid $border-color;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
 	}
 
-	.intro {
-		@extend %light-heading-typeface;
-		color: $heading-colour;
-		font-size: em(36);
-		margin: 0; 
+	h1 {
+		float: left;
+		font-size: 0px;
+		margin: 0;
+		text-indent: -9999px;
+		width: 15%;
 	}
 
 	.logo a {
-		color: $grey;
+		@include size(50px);
+		background-color: $base-colour;
 		display: block;
-		height: 0px;
-		width: 0px;
 	}
 
 	nav {
+		float: right;
+		margin-left: 5%;
 		padding-top: 20px;
+		width: 80%;
+		
+		ul {
+			text-align: right;
+		}
+		
+		li {
+			@extend %heading-typeface;
+			font-size: em(14);
+			margin: 0 0 0 20px;
+		}
+		
+		a {
+			color: $body-colour;
+			
+			&:hover {
+				color: $base-colour;
+			}
+		}
+		
+		.active {
+			color: $base-colour;
+		}
 	}
 
 }

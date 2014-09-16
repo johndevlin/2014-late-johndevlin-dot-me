@@ -20,7 +20,7 @@ body {
 }
 
 a {
-	@include transition (all 0.3s ease-in-out);
+	@include transition (all 0.1s ease-in-out);
 	color: $base-colour;
 	text-decoration: none;
 }
@@ -28,14 +28,14 @@ a {
 div.main-content {
 	padding: 0 $container-padding;
 
-	article {
-		@include span-columns(8);
-	}
+	// article {
+	// 	@include span-columns(8);
+	// }
 
-	aside {
-		@include shift(1);
-		@include span-columns(3);
-	}
+	// aside {
+	// 	@include shift(1);
+	// 	@include span-columns(3);
+	// }
 }
 
 hr {

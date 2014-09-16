@@ -4,7 +4,8 @@ footer {
 	padding: 0 $container-padding;
 	
 	p {
-		font-size: 0.75em;
-		font-weight: bold;
+		@extend %heading-typeface;
+		font-size: em(12);
+		margin-bottom: 0.5em;
 	}
 }
