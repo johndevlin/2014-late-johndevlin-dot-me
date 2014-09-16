@@ -4,14 +4,18 @@
 	display: none;
 }
 
+.mobile-nav {
+	display: none;
+}
+
 
 header {
-	padding: 50px $container-padding 0;
+	padding: $vertical-margin $container-padding 0;
 	
 	.container {
-		border-bottom: 1px solid $border-color;
-		margin-bottom: 50px;
-		padding-bottom: 50px;
+		border-bottom: 1px solid $border-colour;
+		margin-bottom: $vertical-margin;
+		padding-bottom: $vertical-margin;
 	}
 
 	h1 {
@@ -23,15 +27,16 @@ header {
 	}
 
 	.logo a {
-		@include size(50px);
-		background-color: $base-colour;
+		@include size(70px);
+		background: url('../img/flat-j.png');
+		background-size: contain;
 		display: block;
 	}
 
 	nav {
 		float: right;
 		margin-left: 5%;
-		padding-top: 20px;
+		padding-top: 45px;
 		width: 80%;
 		
 		ul {
@@ -46,6 +51,7 @@ header {
 		
 		a {
 			color: $body-colour;
+			padding-bottom: 5px;
 			
 			&:hover {
 				color: $base-colour;
@@ -53,6 +59,7 @@ header {
 		}
 		
 		.active {
+			border-bottom: 2px solid $base-colour;
 			color: $base-colour;
 		}
 	}

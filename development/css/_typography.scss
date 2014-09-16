@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 	@extend %heading-typeface;
 	color: $heading-colour;
 	line-height: 1.2;
-	margin: 1em 0 0.5em; 
+	margin: 0 0 1em; 
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-	font-size: em(32);
+	font-size: em(28); 
 }
 
 h4 {
@@ -58,7 +58,7 @@ h6 {
 
 blockquote {
 	@extend %light-heading-typeface;
-	border-left: 1px solid $border-color;
+	border-left: 1px solid $border-colour;
 	color: $medium-grey;
 	line-height: 1.7;
 	margin: 0 0 40px; 
@@ -70,6 +70,6 @@ blockquote {
 	@extend %heading-typeface;
 	color: $medium-grey;
 	font-size: em(15);
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	text-transform: uppercase;
 }

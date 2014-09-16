@@ -7,13 +7,14 @@
 /* Brand colours */
 
 $white: #ffffff; 
-$bg: #f3f3f3; 
+$bg: #eeeeee; 
 $light-grey: #d6d6d6;
 $medium-grey: #5b5b5b;
 $grey: #333333;
 
 $blue: #06a9f8;
-$pink: #f0048c;
+$pink: #e64686;
+$light-pink: transparentize($pink, 0.8);
 
 
 /* SASS colour calls */
@@ -23,7 +24,7 @@ $body-colour: $grey;
 $heading-colour: $grey;
 
 $background-colour: $bg;
-$border-color: $light-grey;
+$border-colour: $light-pink;
 
 
 
@@ -38,7 +39,7 @@ $border-color: $light-grey;
 
 $site-margin: 30px;
 $container-padding: 20px;
-  
+$vertical-margin: 35px;
 
 
 
