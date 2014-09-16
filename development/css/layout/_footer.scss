@@ -7,5 +7,10 @@ footer {
 		@extend %heading-typeface;
 		font-size: em(12);
 		margin-bottom: 0.5em;
+		
+		a,
+		a:hover {
+			border-width: 1px;
+		}
 	}
 }

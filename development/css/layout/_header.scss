@@ -27,7 +27,7 @@ header {
 	}
 
 	.logo a {
-		@include size(70px);
+		@include size(100px);
 		background: url('../img/flat-j.png');
 		background-size: contain;
 		display: block;
@@ -51,9 +51,11 @@ header {
 		
 		a {
 			color: $body-colour;
+			border: none;
 			padding-bottom: 5px;
 			
 			&:hover {
+				border: none;
 				color: $base-colour;
 			}
 		}
@@ -61,6 +63,10 @@ header {
 		.active {
 			border-bottom: 2px solid $base-colour;
 			color: $base-colour;
+			
+			&:hover {
+				border-bottom: 2px solid $base-colour;
+			}
 		}
 	}
 

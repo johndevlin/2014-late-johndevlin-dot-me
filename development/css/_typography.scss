@@ -16,9 +16,6 @@ p {
 	margin: 0 0 25px; 
 }
 
-p a {
-	color: $base-colour;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	@extend %heading-typeface;

@@ -21,8 +21,14 @@ body {
 
 a {
 	@include transition (all 0.1s ease-in-out);
-	color: $base-colour;
+	border-bottom: 2px solid transparentize($base-colour, 0.7);
+	color: $body-colour;
 	text-decoration: none;
+	
+	&:hover {
+		border-bottom: 2px solid $base-colour;
+		color: $base-colour;
+	}
 }
 
 div.main-content {
