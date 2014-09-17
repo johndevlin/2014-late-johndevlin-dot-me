@@ -1,16 +1,36 @@
 @if $bourbon-neat == true {
 	@include media($tablet) {
 		
-		div.main-content {
+		.work {
 			
-			article {
-				@include span-columns(6);
+			section{ 
+				@include clearfix;
+				
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flexbox;
+				display: flex;
+				@include flex-direction(column);
+				
+				margin-bottom: $vertical-margin;
 			}
-
+			
 			aside {
-				@include span-columns(6);
+				float: none;
+				margin-right: 0;
+				width: 100%;
+				
+				@include order(2);
 			}
 			
+			figure {
+				float: none;
+				text-align: left;
+				width: 100%;
+				
+				@include order(1);
+			}
 		}
+		
 	}
 }

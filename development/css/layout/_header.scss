@@ -33,43 +33,43 @@ header {
 		display: block;
 	}
 
-}
-
-nav {
-	float: right;
-	margin-left: 5%; 
-	padding-top: 45px;
-	width: 80%;
-	
-	ul {
-		text-align: right;
-	}
-	
-	li {
-		@extend %heading-typeface;
-		font-size: em(14);
-		margin: 0 0 0 20px;
-	}
-	
-	a {
-		color: $body-colour;
-		border: none;
-		padding-bottom: 5px;
+	nav {
+		float: right;
+		margin-left: 5%; 
+		padding-top: 45px;
+		width: 80%;
 		
-		&:hover {
+		ul {
+			text-align: right;
+		}
+		
+		li {
+			@extend %heading-typeface;
+			font-size: em(14);
+			margin: 0 0 0 20px;
+		}
+		
+		a {
+			color: $body-colour;
 			border: none;
-			color: $base-colour;
+			padding-bottom: 5px;
+			
+			&:hover {
+				border: none;
+				color: $base-colour;
+			}
 		}
-	}
-	
-	.active {
-		border-bottom: 2px solid $base-colour;
-		color: $base-colour;
 		
-		&:hover {
+		.active {
 			border-bottom: 2px solid $base-colour;
+			color: $base-colour;
+			
+			&:hover {
+				border-bottom: 2px solid $base-colour;
+			}
 		}
 	}
+
 }
 
 .social-link {
@@ -78,6 +78,7 @@ nav {
 }
 
 
+ 
 .cssmask.cssanimations header {
 
 	.logo a {
