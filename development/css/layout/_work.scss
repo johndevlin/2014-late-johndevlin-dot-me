@@ -7,7 +7,7 @@
 	
 	section{ 
 		@include clearfix;
-		margin-bottom: $vertical-margin;
+		margin-bottom: 80px;
 	}
 	
 	aside {
@@ -22,6 +22,7 @@
 		width: 45%;
 		
 		img {
+			border: 1px solid $border-colour;
 			width: auto;
 			max-width: 100%;
 		}
@@ -35,6 +36,7 @@
 	}
 	
 	h3 {
+		margin-bottom: 1em;
 		
 		a {
 			color: $body-colour;
@@ -46,12 +48,36 @@
 		}
 	}
 	
-	p.partner {
+	p.partner,
+	p.role {
 		@extend .small-title;
-		margin: 1.5em 0 0;
+		margin: 2em 0 0;
+	}
+	
+	.role-list {
+		margin-bottom: 1.5em;
+		
+		li {
+			@extend %heading-typeface;
+			font-size: em(18);
+			margin-left: 3px;
+			
+			&:after {
+				content: ','; 
+				margin-left: -4px;
+			}
+			
+			&:first-child {
+				margin: 0;
+			}
+			
+			&:last-child:after {
+				content: ''; 
+			}
+		}
 	}
 	
 	p {
-		
+		margin-bottom: 1.5em;
 	}
 }
