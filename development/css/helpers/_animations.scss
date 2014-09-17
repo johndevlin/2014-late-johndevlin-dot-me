@@ -1,9 +1,22 @@
 
 
 
+// Animate identity 
+@include keyframes(shift-bg) {
+	0% {
+		background-position-x: 0;
+	}
+	50% {
+		background-position-x: 430px;
+	}
+	100% {
+		background-position-x: 0;
+	}
+}
+
+
 
 // Move identity up
-
 .move-on-up-now {
 	@include animation(moveup 0.3s ease-in-out 1);
 }
@@ -23,7 +36,6 @@
 
 
 // Move identity down
-
 .get-on-down {
 	@include animation(getondown 0.3s ease-in-out 1);
 }
@@ -39,3 +51,7 @@
 		@include transform(translateY(0px));
 	}
 }
+
+
+
+

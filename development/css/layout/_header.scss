@@ -35,7 +35,7 @@ header {
 
 	nav {
 		float: right;
-		margin-left: 5%;
+		margin-left: 5%; 
 		padding-top: 45px;
 		width: 80%;
 		
@@ -78,7 +78,20 @@ header {
 }
 
 
+ 
+.cssmask.cssanimations header {
 
+	.logo a {
+		@include animation(shift-bg 78.0s infinite);
+		background-image: url('../img/j-mask.png');
+		background-size: auto;
+			mask: url('../img/j.png');
+	   -moz-mask: url('../img/j.png');
+		-ms-mask: url('../img/j.png');
+		 -o-mask: url('../img/j.png');
+	-webkit-mask: url('../img/j.png');
+	}
+}
 
 
 
