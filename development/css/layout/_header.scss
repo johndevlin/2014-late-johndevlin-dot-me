@@ -72,36 +72,18 @@ header {
 
 }
 
-
-.move-on-up-now {
-	@include animation(moveup 0.3s ease-in-out 1);
-}
-
-@include keyframes(moveup) {
-	0% {
-		@include transform(translateY(0px));
-	}
-	50% {
-		@include transform(translateY(-5px));
-	}
-	100% {
-		@include transform(translateY(0px));
-	}
+.social-link {
+	font-size: 0px;
+	text-indent: -9999px;
 }
 
 
-.get-on-down {
-	@include animation(getondown 0.3s ease-in-out 1);
-}
 
-@include keyframes(getondown) {
-	0% {
-		@include transform(translateY(0px));
-	}
-	50% {
-		@include transform(translateY(5px));
-	}
-	100% {
-		@include transform(translateY(0px));
-	}
-}
+
+
+
+
+
+
+
+
