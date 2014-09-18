@@ -6,10 +6,8 @@
 			section{ 
 				@include clearfix;
 				
-				display: -webkit-flex;
-				display: -moz-flex;
-				display: -ms-flexbox;
-				display: flex;
+				// display: flex;
+				@include display(flex);
 				@include flex-direction(column);
 				
 				margin-bottom: $vertical-margin;

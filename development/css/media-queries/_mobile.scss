@@ -89,11 +89,32 @@
 				font-size: 0px;
 				margin: 0 auto;
 				text-indent: -9999px;
-				width: 100px;
+				width: 100%;
+			}
+				
+			.logo a {
+				@include size(50px);
+				background: url('../img/flat-j.png');
+				background-size: 50px 50px;
+				display: block;
+				// margin: 0 auto; 
 			}
 			
 			nav {
 				display: none;
+			}
+		}
+		
+		.cssmask.cssanimations header {
+
+			.logo a {
+				@include size(50px);
+				background-size: auto 50px;
+					mask-size: 50px;
+			   -moz-mask-size: 50px;
+				-ms-mask-size: 50px;
+				 -o-mask-size: 50px;
+			-webkit-mask-size: 50px;
 			}
 		}
 		
