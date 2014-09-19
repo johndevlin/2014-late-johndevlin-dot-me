@@ -1,16 +1,13 @@
 
 
-/********************************
+// Hide / Show mobile navigation
+$('.open-nav-btn').click(function(){
+	$('body').addClass('open-nav');
+});
 
-	Some scripts I regularly use. 
-	-----------------------------
-	
-	It's doubtful these will be
-	used in every project, please
-	remove any unused script. 
-	
-*/
-
+$('.mobile-nav a').click(function(){
+	$('body').removeClass('open-nav');
+});
 
 
 // Debounced Resize function
