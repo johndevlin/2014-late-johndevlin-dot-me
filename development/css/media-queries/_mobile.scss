@@ -32,7 +32,6 @@
 			@include position(fixed, 0px null null 0px);
 			background: transparentize($base-colour, 0.05);
 			display: block;
-			height: 100%;
 			width: 100%;
 			z-index: 2;
 			
@@ -54,7 +53,8 @@
 		}
 		
 		.open-nav nav.mobile-nav {
-			@include transform(translateX(0));
+			@include animation(nav-in 0.45s ease-in-out 1);
+			@include transform(translateX(0%));
 		}
 		
 		.open-nav-btn {

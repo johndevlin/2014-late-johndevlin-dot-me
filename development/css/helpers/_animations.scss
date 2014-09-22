@@ -55,3 +55,15 @@
 
 
 
+// Animate mobile navigation 
+@include keyframes(nav-in) {
+	0% {
+		@include transform(translateX(100%));
+	}
+	80% {
+		@include transform(translateX(-20%));
+	}
+	100% {
+		@include transform(translateX(0%));
+	}
+}
