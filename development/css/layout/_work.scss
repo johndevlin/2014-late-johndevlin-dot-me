@@ -11,15 +11,16 @@
 	}
 	
 	aside {
+		border-top: 1px solid $border-colour;
 		float: left;
 		margin-right: 5%;
-		width: 50%;
+		width: 35%;
 	}
 	
 	figure {
 		float: right;
 		text-align: right;
-		width: 45%;
+		width: 60%;
 		
 		img {
 			border: 1px solid $border-colour;
@@ -29,10 +30,8 @@
 	}
 	
 	h2 {
-		border-bottom: 1px solid $border-colour;
 		margin-bottom: 0;
 		padding-bottom: 0.5em;
-		width: 50%;
 	}
 	
 	h3 {
