@@ -27,10 +27,12 @@
 		}	
 			
 		nav.mobile-nav {
-			@include transform(translateX(-100%));
-			@include position(absolute, 0px null null 0px);
-			background: $base-colour;
+			@include transition (all 0.3s ease-in);
+			@include transform(translateX(100%));
+			@include position(fixed, 0px null null 0px);
+			background: transparentize($base-colour, 0.05);
 			display: block;
+			height: 100%;
 			width: 100%;
 			z-index: 2;
 			
@@ -41,7 +43,9 @@
 			 
 			 li {
 			 	font-family: $armata;
-				font-size: em(18);
+				font-size: em(14);
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
 			 }
 			
 			a {
