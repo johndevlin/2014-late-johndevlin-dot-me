@@ -15,7 +15,7 @@
 
 		.button {
 			background: $base-colour;
-			color: $bg;
+			color: $bg-colour;
 			display: block;
 			margin-bottom: 1em;
 			text-align: center;
@@ -27,7 +27,7 @@
 		}	
 			
 		nav.mobile-nav {
-			@include transition (all 0.3s ease-in);
+			@include transition (all 0.3s ease-in-out);
 			@include transform(translateX(100%));
 			@include position(fixed, 0px null null 0px);
 			background: transparentize($base-colour, 0.05);
@@ -49,7 +49,7 @@
 			 }
 			
 			a {
-				color: $bg;
+				color: $bg-colour;
 			}
 		}
 		
