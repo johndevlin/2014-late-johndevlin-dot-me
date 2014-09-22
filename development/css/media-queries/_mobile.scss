@@ -32,8 +32,9 @@
 			@include position(fixed, 0px null null 0px);
 			background: transparentize($base-colour, 0.05);
 			display: block;
+			height: 100%;
 			width: 100%;
-			z-index: 2;
+			z-index: 20;
 			
 			 ul {
 			 	padding: 20px 20px 0;
@@ -44,6 +45,7 @@
 			 	font-family: $armata;
 				font-size: em(14);
 				letter-spacing: 0.05em;
+				margin-bottom: 1.5em;
 				text-transform: uppercase;
 			 }
 			
@@ -63,13 +65,14 @@
 			background: url('../img/menu.png') no-repeat center center $base-colour;
 			display: block;
 			float: right;
-			margin-top: 10px;
+			margin-top: 13px;
 			text-indent: -9999px;
 		}
 		
 		.svg .open-nav-btn {
+			@include size(40px);
 			background: url('../img/menu.svg') no-repeat center center $base-colour;
-			background-size: 20px 20px;
+			background-size: 25px 25px;
 		}
 		
 		p {
@@ -120,7 +123,7 @@
 			
 			.container {
 				margin-bottom: 30px;
-				padding-bottom: 25px;
+				padding-bottom: 20px;
 			}
 			
 			h1 {
@@ -131,9 +134,9 @@
 			}
 				
 			.logo a {
-				@include size(50px);
+				@include size(65px);
 				background: url('../img/flat-j.png');
-				background-size: 50px 50px;
+				background-size: 65px 65px;
 				display: block;
 			}
 			
@@ -145,13 +148,13 @@
 		.cssmask.cssanimations header {
 
 			.logo a {
-				@include size(50px);
-				background-size: auto 50px;
-					mask-size: 50px;
-			   -moz-mask-size: 50px;
-				-ms-mask-size: 50px;
-				 -o-mask-size: 50px;
-			-webkit-mask-size: 50px;
+				@include size(65px);
+				background-size: auto 65px;
+					mask-size: 65px;
+			   -moz-mask-size: 65px;
+				-ms-mask-size: 65px;
+				 -o-mask-size: 65px;
+			-webkit-mask-size: 65px;
 			}
 		}
 		
