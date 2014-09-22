@@ -29,12 +29,11 @@
 		nav.mobile-nav {
 			@include transition (all 0.3s ease-in-out);
 			@include transform(translateX(100%));
-			@include position(fixed, 0px null null 0px);
+			@include position(absolute, 0px null null 0px);
 			background: transparentize($base-colour, 0.05);
 			display: block;
-			height: 100%;
 			width: 100%;
-			z-index: 20;
+			z-index: 2;
 			
 			 ul {
 			 	padding: 20px 20px 0;
@@ -55,7 +54,6 @@
 		}
 		
 		.open-nav nav.mobile-nav {
-			@include animation(nav-in 0.45s ease-in-out 1);
 			@include transform(translateX(0%));
 		}
 		
