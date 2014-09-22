@@ -57,6 +57,21 @@
 			@include transform(translateX(0));
 		}
 		
+		.open-nav-btn {
+			@include transition (all 0.3s ease-in-out);
+			@include size(30px);
+			background: url('../img/menu.png') no-repeat center center $base-colour;
+			display: block;
+			float: right;
+			margin-top: 10px;
+			text-indent: -9999px;
+		}
+		
+		.svg .open-nav-btn {
+			background: url('../img/menu.svg') no-repeat center center $base-colour;
+			background-size: 20px 20px;
+		}
+		
 		p {
 			font-size: em(16);
 			line-height: 1.6;
@@ -125,15 +140,6 @@
 			nav {
 				display: none;
 			}
-		}
-		
-		.open-nav-btn {
-			@include size(30px);
-			background-color: $base-colour;
-			display: block;
-			float: right;
-			margin-top: 10px;
-			text-indent: -9999px;
 		}
 		
 		.cssmask.cssanimations header {
