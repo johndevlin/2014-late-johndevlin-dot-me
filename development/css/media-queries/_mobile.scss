@@ -175,7 +175,13 @@
 			}
 			
 			.role-list {
-				margin: 0 0 25px;
+				margin: 2px 0 25px; 
+				padding-left: 0;
+				position: relative;
+				
+				&:before {
+					display: none;
+				}
 			}
 			
 			p {
