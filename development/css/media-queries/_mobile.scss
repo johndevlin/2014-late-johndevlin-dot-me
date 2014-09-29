@@ -24,6 +24,7 @@
 
 		.button + .button {
 			margin-left: 0;
+			margin-top: 20px;
 		}
 		
 		input[type="submit"] {
@@ -33,7 +34,7 @@
 			
 		nav.mobile-nav {
 			@include transition (all 0.3s ease-in-out);
-			@include transform(translateX(100%));
+			@include transform(translateX(-100%));
 			@include position(absolute, 0px null null 0px);
 			background: transparentize($base-colour, 0.05);
 			display: block;
@@ -56,6 +57,35 @@
 			a {
 				color: $bg-colour;
 			}
+		}
+		
+		// Mobile contact form
+		.contact-form {
+			padding: 20px $container-padding 0;
+			
+			p {
+				color: $bg-colour;
+				font-size: em(16);
+				margin: 0 0 1em;
+			}
+		}
+		
+		fieldset {
+			margin: 0 0 1.25em;
+			padding: 0;
+		}
+		
+		#{$all-text-inputs},
+		textarea {
+			font-size: em(16);
+		}
+		
+		textarea {
+			line-height: 1.2;
+		}
+		
+		input[type="submit"] {
+			border-radius: 0;
 		}
 		
 		.open-nav nav.mobile-nav {

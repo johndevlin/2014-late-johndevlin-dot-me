@@ -96,15 +96,16 @@ header {
 .contact-form {
 	@include transition (all 0.3s ease-in-out);
 	@include transform(translateY(-100%));
+	@include position(absolute, 0px null null null);
 	background: transparentize($base-colour, 0.05);
 	display: block;
-	padding: 20px $container-padding 0;
+	padding: 40px $container-padding 0;
 	width: 100%;
 	z-index: 3;
 	
 	p {
 		color: $bg-colour;
-		font-size: em(20	);
+		font-size: em(20);
 		margin: 0 0 1em;
 	}
 }

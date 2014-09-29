@@ -15,7 +15,7 @@
 	cursor: pointer;
 	font-size: em(15);
 	letter-spacing: 0.075em;
-	padding: 12px 28px;
+	padding: 12px 28px 11px;
 	text-transform: uppercase;
 	-webkit-font-smoothing: auto;
 	font-smoothing: auto;
@@ -46,4 +46,14 @@
 
 .button + .button {
 	margin-left: 1em;
+}
+
+.contact-form .button.ghost {
+	border-color: $bg-colour;
+	color: $bg-colour;
+	
+	&:hover {
+		background: $bg-colour;
+		color: $base-colour;
+	}
 }

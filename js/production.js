@@ -1840,6 +1840,11 @@ $('.open-contact-form-link').click(function(){
 });
 
 
+$('.close-contact-form-link').click(function(){
+	$('body').removeClass('open-contact-form');
+});
+
+
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff

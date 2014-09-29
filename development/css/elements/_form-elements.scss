@@ -27,7 +27,6 @@ textarea {
 
 fieldset {
 	border: none;
-	border-bottom: 1px solid transparentize($bg-colour, 0.6); 
 	margin: 0 0 1.5em;
 	padding: 0 0 0.75em;
 }
@@ -53,7 +52,14 @@ textarea:focus {
 
 input[type="submit"] {
 	@extend .button;
+-webkit-appearance: none;
+		appearance: none;
 	background: $bg-colour;
+	border: 2px solid $bg-colour;
 	color: $base-colour;
 	outline: none;
+	
+	&:hover {
+		border-color: $bg-colour;
+	}
 }
