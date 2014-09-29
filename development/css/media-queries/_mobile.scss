@@ -24,7 +24,12 @@
 
 		.button + .button {
 			margin-left: 0;
-		}	
+		}
+		
+		input[type="submit"] {
+			background: $bg-colour;
+			color: $base-colour;
+		}
 			
 		nav.mobile-nav {
 			@include transition (all 0.3s ease-in-out);

@@ -9,6 +9,12 @@ $('.mobile-nav a').click(function(){
 	$('body').removeClass('open-nav');
 });
 
+// Hide / Show contact form
+$('.open-contact-form-link').click(function(){
+	$('body').addClass('open-contact-form');
+	$('body').removeClass('open-nav');
+});
+
 
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {

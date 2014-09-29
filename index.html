@@ -31,40 +31,44 @@
 
 </head>
 
-<body>
+<body class="open-contact-form">
 
 	<form class="contact-form">
 	
-		<p>
-			Fill out your name, email address and message and I'll get back to you soon. 
-		</p>
-	
-		<fieldset>
+		<div class="container">
 			
-			<label for="contact-form-name">Name:</label>
-			<input type="text" name="contact-form-name" id="contact-form-name" placeholder="Bill Murray" />
+			<p>
+				Fill out your name, email address and message and I'll get back to you soon. 
+			</p>
 			
-		</fieldset>
+			<fieldset>
+				
+				<label for="contact-form-name">Name:</label>
+				<input type="text" name="contact-form-name" id="contact-form-name" placeholder="Bill Murray" />
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<label for="contact-form-email">Email:</label>
+				<input type="email" name="contact-form-email" id="contact-form-email" placeholder="p.venkman@ghostbusters.com" />
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<label for="contact-form-message">Message:</label>
+				<textarea name="contact-form-message" id="contact-form-message" placeholder="Please write your message here…"></textarea>
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<input type="submit" value="Send your message" />
+				
+			</fieldset>
 		
-		<fieldset>
-			
-			<label for="contact-form-email">Email:</label>
-			<input type="email" name="contact-form-email" id="contact-form-email" placeholder="p.venkman@ghostbusters.com" />
-			
-		</fieldset>
-		
-		<fieldset>
-			
-			<label for="contact-form-message">Message:</label>
-			<textarea name="contact-form-message" id="contact-form-message" placeholder="Please write your message here…"></textarea>
-			
-		</fieldset>
-			
-		<fieldset>
-		
-			<input type="submit" value="Send your message" />
-			
-		</fieldset>
+		</div>
 	
 	</form>
 
@@ -76,7 +80,7 @@
 			
 			<li><a href="#">What I Do</a></li>
 			
-			<li><a class="return-false" href="#">Contact</a></li>
+			<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 			
 			<li><a class="return-false" href="#">Close</a></li>
 		
@@ -99,7 +103,7 @@
 					
 					<li><a href="#">What I Do</a></li>
 					
-					<li><a class="return-false" href="#">Contact</a></li>
+					<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 					
 					<li><a class="social-link icon-twitter" href="https://twitter.com/john_devlin">Twitter</a></li>
 					
