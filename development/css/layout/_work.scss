@@ -12,15 +12,11 @@
 
 	aside {
 		border-top: 1px solid $border-colour;
-		float: left;
-		margin-right: 5%;
-		width: 35%;
+		@include span-columns(5);
 	}
 
 	figure {
-		float: right;
-		text-align: right;
-		width: 60%;
+		@include span-columns(7);
 
 		img {
 			border: 1px solid $border-colour;
