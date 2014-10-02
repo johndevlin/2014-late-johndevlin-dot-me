@@ -1,9 +1,5 @@
 
 
-.contact-form {
-	display: none;
-}
-
 .mobile-nav {
 	display: none;
 }
@@ -80,8 +76,6 @@ header {
 	font-size: 0px;
 	text-indent: -9999px;
 }
-
-
  
 .cssmask.cssanimations header {
 
@@ -99,7 +93,26 @@ header {
 
 
 
+.contact-form {
+	@include transition (all 0.3s ease-in-out);
+	@include transform(translateY(-100%));
+	@include position(absolute, 0px null null null);
+	background: transparentize($base-colour, 0.05);
+	display: block;
+	padding: 40px $container-padding 0;
+	width: 100%;
+	z-index: 3;
+	
+	p {
+		color: $bg-colour;
+		font-size: em(20);
+		margin: 0 0 1em;
+	}
+}
 
+.open-contact-form .contact-form {
+	@include transform(translateY(0));
+}
 
 
 

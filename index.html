@@ -13,6 +13,8 @@
 	<meta name="keywords" content="Design, Digital, UX, Web Design, Responsive, CSS, HTML, Keywords do fuck all, don't they?">
 
 	<title>John Devlin — Hired geek, digital designer and front-end developer, based in Belfast, Northern Ireland.</title>
+	
+	<meta name="robots" content="nofollow" />
 
 	<link rel="shortcut icon" type="image/ico" href="favicon.png">
 
@@ -33,36 +35,42 @@
 
 	<form class="contact-form">
 	
-		<p>
-			Fill out your name, email address and message and I'll get back to you soon. 
-		</p>
-	
-		<fieldset>
+		<div class="container">
 			
-			<label for="contact-form-name">Name:</label>
-			<input type="text" name="contact-form-name" id="contact-form-name" placeholder="Bill Murray" />
+			<p>
+				Fill out your name, email address and message and I'll get back to you soon. 
+			</p>
 			
-		</fieldset>
+			<fieldset>
+				
+				<label for="contact-form-name">Name:</label>
+				<input type="text" name="contact-form-name" id="contact-form-name" placeholder="Bill Murray" />
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<label for="contact-form-email">Email:</label>
+				<input type="email" name="contact-form-email" id="contact-form-email" placeholder="p.venkman@ghostbusters.com" />
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<label for="contact-form-message">Message:</label>
+				<textarea name="contact-form-message" id="contact-form-message" placeholder="Please write your message here…"></textarea>
+				
+			</fieldset>
+			
+			<fieldset>
+				
+				<input type="submit" value="Send your message" />
+				
+				<a href="#" class="return-false button ghost close-contact-form-link">Cancel</a>
+				
+			</fieldset>
 		
-		<fieldset>
-			
-			<label for="contact-form-email">Email:</label>
-			<input type="email" name="contact-form-email" id="contact-form-email" placeholder="p.venkman@ghostbusters.com" />
-			
-		</fieldset>
-		
-		<fieldset>
-			
-			<label for="contact-form-message">Message:</label>
-			<textarea name="contact-form-message" id="contact-form-message" placeholder="Please write your message here…"></textarea>
-			
-		</fieldset>
-			
-		<fieldset>
-		
-			<input type="submit" value="Send your message" />
-			
-		</fieldset>
+		</div>
 	
 	</form>
 
@@ -74,7 +82,7 @@
 			
 			<li><a href="#">What I Do</a></li>
 			
-			<li><a class="return-false" href="#">Contact</a></li>
+			<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 			
 			<li><a class="return-false" href="#">Close</a></li>
 		
@@ -97,7 +105,7 @@
 					
 					<li><a href="#">What I Do</a></li>
 					
-					<li><a class="return-false" href="#">Contact</a></li>
+					<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 					
 					<li><a class="social-link icon-twitter" href="https://twitter.com/john_devlin">Twitter</a></li>
 					
@@ -203,7 +211,7 @@
 			</p>
 			
 			<p class="colophon">
-				This site is set in <a href="http://sorkintype.com/fonts.html#mw">Merriweather</a> &amp; <a href="http://sorkintype.com/fonts.html#arm">Armata</a>, designed by <a href="http://sorkintype.com/">Sorkin Type</a>, and hosted by <a href="http://www.google.com/fonts/">Google Web Fonts</a>. It was build with <a href="http://www.sublimetext.com/">Sublime Text 3</a>, using <a href="https://github.com/johndevlin/Trigger">Trigger</a>, <a href="http://gruntjs.com/">Grunt</a> &amp; <a href="http://sass-lang.com/">Sass</a>. 
+				This site is set in <a href="http://sorkintype.com/fonts.html#mw">Merriweather</a> &amp; <a href="http://sorkintype.com/fonts.html#arm">Armata</a>, designed by <a href="http://sorkintype.com/">Sorkin Type</a>, and served by <a href="http://www.google.com/fonts/">Google Web Fonts</a>. It was build using <a href="https://github.com/johndevlin/Trigger">Trigger</a>, <a href="http://gruntjs.com/">Grunt</a> &amp; <a href="http://sass-lang.com/">Sass</a>. 
 			</p>
 
 		</div>

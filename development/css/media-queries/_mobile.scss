@@ -15,7 +15,7 @@
 
 		.button {
 			background: $base-colour;
-			color: $bg;
+			color: $bg-colour;
 			display: block;
 			margin-bottom: 1em;
 			text-align: center;
@@ -24,12 +24,19 @@
 
 		.button + .button {
 			margin-left: 0;
+			margin-top: 20px;
+		}
+
+		input[type="submit"] {
+			background: $bg-colour;
+			color: $base-colour;
 		}
 
 		nav.mobile-nav {
+			@include transition (all 0.3s ease-in-out);
 			@include transform(translateX(-100%));
 			@include position(absolute, 0px null null 0px);
-			background: $base-colour;
+			background: transparentize($base-colour, 0.05);
 			display: block;
 			width: 100%;
 			z-index: 2;
@@ -40,15 +47,65 @@
 			 }
 
 			 li {
+			 	font-family: $armata;
+				font-size: em(14);
+				letter-spacing: 0.05em;
+				margin-bottom: 1.5em;
+				text-transform: uppercase;
 			 }
 
 			a {
-				color: $bg;
+				color: $bg-colour;
 			}
 		}
 
+		// Mobile contact form
+		.contact-form {
+			padding: 20px $container-padding 0;
+
+			p {
+				color: $bg-colour;
+				font-size: em(16);
+				margin: 0 0 1em;
+			}
+		}
+
+		fieldset {
+			margin: 0 0 1.25em;
+			padding: 0;
+		}
+
+		#{$all-text-inputs},
+		textarea {
+			font-size: em(16);
+		}
+
+		textarea {
+			line-height: 1.2;
+		}
+
+		input[type="submit"] {
+			border-radius: 0;
+		}
+
 		.open-nav nav.mobile-nav {
-			@include transform(translateX(0));
+			@include transform(translateX(0%));
+		}
+
+		.open-nav-btn {
+			@include transition (all 0.3s ease-in-out);
+			@include size(30px);
+			background: url('../img/menu.png') no-repeat center center $base-colour;
+			display: block;
+			float: right;
+			margin-top: 13px;
+			text-indent: -9999px;
+		}
+
+		.svg .open-nav-btn {
+			@include size(40px);
+			background: url('../img/menu.svg') no-repeat center center $base-colour;
+			background-size: 25px 25px;
 		}
 
 		p {
@@ -99,7 +156,7 @@
 
 			.container {
 				margin-bottom: 30px;
-				padding-bottom: 25px;
+				padding-bottom: 20px;
 			}
 
 			h1 {
@@ -110,9 +167,9 @@
 			}
 
 			.logo a {
-				@include size(50px);
+				@include size(65px);
 				background: url('../img/flat-j.png');
-				background-size: 50px 50px;
+				background-size: 65px 65px;
 				display: block;
 			}
 
@@ -133,21 +190,24 @@
 		.cssmask.cssanimations header {
 
 			.logo a {
-				@include size(50px);
-				background-size: auto 50px;
-					mask-size: 50px;
-			   -moz-mask-size: 50px;
-				-ms-mask-size: 50px;
-				 -o-mask-size: 50px;
-			-webkit-mask-size: 50px;
+				@include size(65px);
+				background-size: auto 65px;
+					mask-size: 65px;
+			   -moz-mask-size: 65px;
+				-ms-mask-size: 65px;
+				 -o-mask-size: 65px;
+			-webkit-mask-size: 65px;
 			}
 		}
 
 		.work {
 
 			h2 {
-				border: none;
 				padding-bottom: 0;
+			}
+
+			aside {
+				border-top: none;
 			}
 
 			figure {
@@ -166,7 +226,13 @@
 			}
 
 			.role-list {
-				margin: 0 0 25px;
+				margin: 2px 0 25px;
+				padding-left: 0;
+				position: relative;
+
+				&:before {
+					display: none;
+				}
 			}
 
 			p {

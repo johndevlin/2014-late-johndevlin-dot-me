@@ -4,79 +4,94 @@
 */
 
 .work {
-	
-	section{ 
+
+	section{
 		@include clearfix;
 		margin-bottom: 80px;
 	}
-	
+
 	aside {
+		border-top: 1px solid $border-colour;
 		float: left;
 		margin-right: 5%;
-		width: 50%;
+		width: 35%;
 	}
-	
+
 	figure {
 		float: right;
 		text-align: right;
-		width: 45%;
-		
+		width: 60%;
+
 		img {
 			border: 1px solid $border-colour;
 			width: auto;
 			max-width: 100%;
 		}
 	}
-	
+
 	h2 {
-		border-bottom: 1px solid $border-colour;
 		margin-bottom: 0;
 		padding-bottom: 0.5em;
-		width: 50%;
 	}
-	
+
 	h3 {
 		margin-bottom: 1em;
-		
+
 		a {
 			color: $body-colour;
 			border: none;
-			
+
 			&:hover {
 				color: $base-colour;
 			}
 		}
 	}
-	
+
 	p.partner,
 	p.role {
 		@extend .small-title;
 		margin: 2em 0 0;
 	}
-	
+
+	p.role {
+
+	}
+
 	.role-list {
-		margin-bottom: 1.5em;
-		
+		margin: 2px 0 1.5em;
+		padding-left: 14px;
+		position: relative;
+
+		&:before {
+			@include size(6px);
+			@include position(absolute, 6px null null 0px);
+			background: $base-colour;
+			content: '';
+			border-radius: 6px;
+		}
+
 		li {
 			@extend %heading-typeface;
-			font-size: em(18);
+			color: $base-colour;
+			font-size: em(13);
+			text-transform: uppercase;
 			margin-left: 3px;
-			
+
 			&:after {
-				content: ','; 
+				content: ',';
 				margin-left: -4px;
 			}
-			
+
 			&:first-child {
 				margin: 0;
 			}
-			
+
 			&:last-child:after {
-				content: ''; 
+				content: '';
 			}
 		}
 	}
-	
+
 	p {
 		margin-bottom: 1.5em;
 	}

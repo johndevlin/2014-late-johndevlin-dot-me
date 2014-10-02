@@ -6,7 +6,7 @@ footer {
 	
 	p {
 		@extend %heading-typeface;
-		color: $bg;
+		color: $bg-colour;
 		font-size: em(14);
 		margin-bottom: 1.5em;
 		max-width: 800px;
@@ -16,15 +16,15 @@ footer {
 		}
 		
 		a {
-			color: $bg;
+			color: $bg-colour;
 			border-width: 1px;
-			border-color: transparentize($bg, 0.6);
+			border-color: transparentize($bg-colour, 0.6);
 		}
 		
 		a:hover {
-			color: $bg;
+			color: $bg-colour;
 			border-width: 1px;
-			border-color: transparentize($bg, 0.3);
+			border-color: transparentize($bg-colour, 0.3);
 		}
 	}
 }
