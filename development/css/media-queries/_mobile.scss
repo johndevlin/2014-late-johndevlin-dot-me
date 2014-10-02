@@ -1,10 +1,10 @@
 @if $bourbon-neat == true {
 	@include media($mobile) {
-		
+
 		body {
 			-webkit-text-size-adjust: none;
 		}
-		
+
 		.mobile {
 			display: block;
 		}
@@ -24,8 +24,8 @@
 
 		.button + .button {
 			margin-left: 0;
-		}	
-			
+		}
+
 		nav.mobile-nav {
 			@include transform(translateX(-100%));
 			@include position(absolute, 0px null null 0px);
@@ -33,32 +33,30 @@
 			display: block;
 			width: 100%;
 			z-index: 2;
-			
+
 			 ul {
 			 	padding: 20px 20px 0;
 			 	margin: 0;
 			 }
-			 
+
 			 li {
-			 	font-family: $armata;
-				font-size: em(18);
 			 }
-			
+
 			a {
 				color: $bg;
 			}
 		}
-		
+
 		.open-nav nav.mobile-nav {
 			@include transform(translateX(0));
 		}
-		
+
 		p {
 			font-size: em(16);
 			line-height: 1.6;
-			margin: 0 0 25px; 
+			margin: 0 0 25px;
 		}
-		
+
 		h1 {
 			font-size: em(42);
 			line-height: 1.1;
@@ -70,7 +68,7 @@
 		}
 
 		h3 {
-			font-size: em(23); 
+			font-size: em(23);
 		}
 
 		h4 {
@@ -84,11 +82,11 @@
 		h6 {
 			font-size: em(16);
 		}
-		
+
 		blockquote {
 			font-size: em(16);
 			line-height: 1.7;
-			margin: 0 0 40px; 
+			margin: 0 0 40px;
 			padding: 0 0 0 20px;
 		}
 
@@ -98,31 +96,31 @@
 
 		header {
 			padding: $container-padding $container-padding 0;
-			
+
 			.container {
 				margin-bottom: 30px;
 				padding-bottom: 25px;
 			}
-			
+
 			h1 {
 				float: left;
 				font-size: 0px;
 				margin: 0 auto;
 				text-indent: -9999px;
 			}
-				
+
 			.logo a {
 				@include size(50px);
 				background: url('../img/flat-j.png');
 				background-size: 50px 50px;
 				display: block;
 			}
-			
+
 			nav {
 				display: none;
 			}
 		}
-		
+
 		.open-nav-btn {
 			@include size(30px);
 			background-color: $base-colour;
@@ -131,7 +129,7 @@
 			margin-top: 10px;
 			text-indent: -9999px;
 		}
-		
+
 		.cssmask.cssanimations header {
 
 			.logo a {
@@ -144,18 +142,18 @@
 			-webkit-mask-size: 50px;
 			}
 		}
-		
+
 		.work {
-			
+
 			h2 {
 				border: none;
 				padding-bottom: 0;
 			}
-			
+
 			figure {
 				margin: 0 0 20px;
 			}
-		
+
 			h2,
 			h3,
 			p.partner,
@@ -166,26 +164,26 @@
 				text-align: center;
 				width: 100%;
 			}
-			
+
 			.role-list {
 				margin: 0 0 25px;
 			}
-			
+
 			p {
 				text-align: left;
 			}
-			
-			p.partner, 
+
+			p.partner,
 			p.role {
 				margin-bottom: 0;
 			}
 		}
-		
+
 		footer {
 			margin: 0;
 			padding: 25px $container-padding;
 		}
-		
-				
+
+
 	}
 }
