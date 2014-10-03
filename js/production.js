@@ -1877,12 +1877,4 @@ $('.current-year').text(currentYear);
 
 
 // Form validation
- $('.some-form').validate({
- 	rules: {
- 		inputname: {
- 			required: true,
- 			email: true,
- 			minlength: 10
- 		},
- 	}
- });
+ $('form').validate();
