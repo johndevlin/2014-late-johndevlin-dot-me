@@ -16,11 +16,11 @@
 
 	<meta name="robots" content="nofollow" />
 
-	<link rel="shortcut icon" type="image/ico" href="favicon.png">
+	<link rel="shortcut icon" type="image/ico" href="/favicon.png">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="/js/modernizr-2.6.2.min.js"></script>
 
 	<!-- Google Web Fonts: Merriweather & Armata -->
 	<link href="http://fonts.googleapis.com/css?family=Armata|Merriweather:400,300italic" rel="stylesheet" type="text/css">
@@ -218,10 +218,10 @@
 	</footer>
 
 	<!--[if (gte IE 6)&(lte IE 8)]>
-		<script src='js/selectivizr-min.js'></script>
+		<script src='/js/selectivizr-min.js'></script>
 	<![endif]-->
 
-	<script src="js/production.min.js"></script>
+	<script src="/js/production.min.js"></script>
 
 	<!-- Update this -->
 	<script>
