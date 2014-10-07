@@ -1,7 +1,7 @@
 <?php include("../header.php"); ?>
 
 	<div role="main" class="main-content">
-		<div class="container what-i-do-intro centered-text">
+		<div class="container what-i-do intro centered-text">
 
 			<h1>What I do</h1>
 			
@@ -9,7 +9,7 @@
 	</div>
 	
 	<div role="main" class="main-content">
-		<div class="container what-i-do-content centered-text">
+		<div class="container what-i-do content centered-text">
 
 			<section class="plan">
 			
