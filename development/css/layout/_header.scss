@@ -43,6 +43,8 @@ header {
 			@extend %heading-typeface;
 			font-size: em(14);
 			margin: 0 0 0 20px;
+			position: relative;
+			z-index: 1;
 		}
 		
 		a {
@@ -65,7 +67,82 @@ header {
 			}
 		}
 	}
+}
 
+.tooltip {
+	@include clearfix;
+	@include transition (all 0.2s ease-in);
+	@include position(absolute, -10px null null -160px);
+	background: $base-colour;
+	height: 40px;
+	width: 150px;
+	z-index: 5;
+	
+	// Animation
+	opacity: 0;
+	@include transform(translateX(-50%));
+	
+	&:before {
+		@include position(absolute, 50% null null 100%);
+		@include triangle(10px, $base-colour, right);
+		@include size(10px);
+		content: '';
+		display: block;
+		margin-top: -5px;
+	}
+	
+	p {
+		float: left;
+		line-height: 1;
+		margin: 0;
+	}
+	
+	.icon-twitter,
+	.icon-dribbble,
+	.icon-github {
+		@include transform(translateY(2px) translateX(2px)); 
+
+		background: $background-colour;
+		height: 36px;
+		text-align: center;
+		text-indent: -9999px;
+		position: relative;
+		width: 20%;
+		
+		&:before {
+			@include position(absolute, 50% null null 50%);
+			color: $base-colour;
+		}
+	}
+	
+	.icon-twitter:before {
+		margin: -7px 0 0 -8px;
+	}
+	
+	.icon-dribbble:before {
+		margin: -7px 0 0 -8px;
+	}
+	
+	.icon-github:before {
+		margin: -7px 0 0 -8px;
+	}
+	
+	.handle {
+		@extend %heading-typeface;
+		color: $white;
+		font-size: 13px;
+		padding: 13px;
+		width: 80%;
+	}
+}
+
+// Show tooltip
+nav li:hover {
+	
+	.tooltip {
+		opacity: 1;
+		@include transform(translateX(0));
+	}
 }
 
 .open-nav-btn {
