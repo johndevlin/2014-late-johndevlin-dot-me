@@ -88,3 +88,29 @@ p.role {
 		}
 	}
 }
+
+
+.work.masonry-feed {
+	
+	section {
+		position: relative;
+	}
+	
+	aside {
+		@include position(absolute, 0px null null null);
+		display: none;
+	}
+	
+	figure {
+		@include position(absolute, 0px null null 0px);
+		z-index: 1;
+	}
+	
+	h2,
+	a.button {
+		@include position(absolute, 20px null null 20px);
+		z-index: 2;
+	}
+}
+
+
