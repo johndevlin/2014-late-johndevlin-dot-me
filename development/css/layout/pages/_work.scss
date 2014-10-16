@@ -3,27 +3,16 @@
 	Work
 */
 
+
+header {
+	height: 150px;
+	
+	.container {
+		display: none;
+	}
+}
+
 .work {
-
-	section{
-		@include clearfix;
-		margin-bottom: 80px;
-	}
-
-	aside {
-		border-top: 1px solid $border-colour;
-		@include span-columns(5);
-	}
-
-	figure {
-		@include span-columns(7);
-
-		img {
-			border: 1px solid $border-colour;
-			width: auto;
-			max-width: 100%;
-		}
-	}
 
 	h2 {
 		margin-bottom: 0;
@@ -92,8 +81,13 @@ p.role {
 
 .work.masonry-feed {
 	
-	section {
+	ul {
+		@include clearfix;
+	}
+	
+	li {
 		position: relative;
+		width: 50%;
 	}
 	
 	aside {
@@ -102,7 +96,7 @@ p.role {
 	}
 	
 	figure {
-		@include position(absolute, 0px null null 0px);
+		position: relative;
 		z-index: 1;
 	}
 	

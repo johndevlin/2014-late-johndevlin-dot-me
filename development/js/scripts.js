@@ -21,6 +21,13 @@ $('.close-contact-form-link').click(function(){
 });
 
 
+$('.masonry-feed ul').masonry({
+	
+	itemSelector: '.masonry-feed li'
+	
+});
+
+
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff
