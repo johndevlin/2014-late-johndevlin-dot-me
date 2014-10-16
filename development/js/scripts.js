@@ -27,8 +27,8 @@ $(window).load(function(){
 
 	$('.masonry-feed ul').isotope({
 
-		itemSelector: '.masonry-feed li',
-		
+		itemSelector: '.masonry-feed li'
+
 	});
 	
 });
