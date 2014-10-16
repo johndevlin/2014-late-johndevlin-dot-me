@@ -21,9 +21,15 @@ $('.close-contact-form-link').click(function(){
 });
 
 
-$('.masonry-feed ul').masonry({
+$(window).load(function(){
 	
-	itemSelector: '.masonry-feed li'
+	$('.masonry-feed').show();
+
+	$('.masonry-feed ul').isotope({
+
+		itemSelector: '.masonry-feed li',
+		
+	});
 	
 });
 
