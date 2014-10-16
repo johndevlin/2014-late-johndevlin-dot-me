@@ -5,7 +5,9 @@
 
 
 header {
+	background: $pink;
 	height: 150px;
+	margin-bottom: 50px;
 	
 	.container {
 		display: none;
@@ -86,29 +88,25 @@ p.role {
 	}
 	
 	li {
-		position: relative;
 		width: 50%;
 	}
 	
 	aside {
-		@include position(absolute, 0px null null null);
 		display: none;
 	}
 	
 	figure {
-		position: relative;
-		z-index: 1;
+		// position: relative;
+		// z-index: 1;
 	}
 	
 	h2 {
-		@include position(absolute, 20px null null 20px);
-		z-index: 2;
+		// position: relative;
+		// z-index: 2;
 	}
 	
 	a.button {
-		@include position(absolute, 20px null null 20px);
 		display: none;
-		z-index: 2;
 	}
 }
 
