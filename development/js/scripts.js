@@ -24,10 +24,9 @@ $('.close-contact-form-link').click(function(){
 $(window).load(function(){
 	
 	$('.masonry-feed').show();
-
+ 
 	$('.masonry-feed ul').isotope({
 
-		itemSelector: '.masonry-feed li'
 
 	});
 	
