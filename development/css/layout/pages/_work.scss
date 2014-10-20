@@ -80,9 +80,17 @@ p.role {
 	}
 }
 
+.main-content.work {
+	padding: 0;
+}
 
-.work.masonry-feed {
+.container.masonry-feed {
 	display: none;
+	max-width: none;
+	
+	h1 {
+		text-align: center;
+	}
 	
 	ul {
 		@include clearfix;
@@ -94,7 +102,7 @@ p.role {
 		float: left;
 		margin: 0;
 		overflow: hidden;
-		width: 50%;
+		width: 33.333333%;
 		
 		&:hover {
 			
@@ -103,8 +111,8 @@ p.role {
 			}
 			
 			img {
-				@include transform(scale(0.5)translateY(150%));
-				opacity: 0.7;
+				@include transform(scale(1)translateY(25%));
+				opacity: 0;
 			}
 		}
 	}
