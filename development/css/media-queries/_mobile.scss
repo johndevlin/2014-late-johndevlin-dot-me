@@ -244,6 +244,17 @@
 				margin-bottom: 0;
 			}
 		}
+		
+		.container.masonry-feed {
+			
+			li.masonry-item {
+				width: 100%;
+				
+				&.small { 
+					width: 100%;
+				}
+			}
+		}
 
 		footer {
 			margin: 0;

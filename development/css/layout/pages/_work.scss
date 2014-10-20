@@ -147,7 +147,7 @@ p.role {
 		@include transition (all 0.3s ease-in-out);
 		display: block;
 		margin: 0;
-		width: auto;
+		width: 100%;
 		max-width: 100%;
 		z-index: 2;
 	}

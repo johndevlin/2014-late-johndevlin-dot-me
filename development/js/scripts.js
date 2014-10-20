@@ -21,11 +21,26 @@ $('.close-contact-form-link').click(function(){
 });
 
 
+$('.masonry-feed ul').isotope();
+
 $(window).load(function(){
 	
 	$('.masonry-feed').show();
- 
-	$('.masonry-feed ul').isotope();
+	
+	var container = $('.masonry-feed ul');
+	var item = container.find('.masonry-feed li').eq(0); 
+	
+	$('.masonry-feed ul').isotope({
+		resizable: false,
+		masonry: {
+			columnWidth: container.width() / 4
+		},
+	});
+	
+	$(window).smartresize(function(){
+		var itemWidth = $item.outerWidth(true);
+		container.css({ width: item * 4 }).isotope('reLayout');
+	}).smartresize();
 	
 });
 	
@@ -55,7 +70,7 @@ $('input, textarea').placeholder();
 $(document).keyup(function(e) {
 	
 	if (e.keyCode == 27) { 
-		// Guff
+		$('.masonry-feed ul').isotope('shuffle');
 	}
 	
 }); 
