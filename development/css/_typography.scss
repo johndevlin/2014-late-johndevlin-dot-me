@@ -36,27 +36,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: em(65); 
+	font-size: em(36); 
 	line-height: 1.1;
 	margin: 0 0 40px;
 }
 
 h2 {
-	font-size: em(40);
+	font-size: em(24);
 }
 
 h3 {
-	font-size: em(26); 
+	font-size: em(21); 
 }
 
 h4 {
-	font-size: em(22);
-}
-
-h5 {
 	font-size: em(18);
 }
 
+h5,
 h6 {
 	@extend %base-typeface; 
 	font-size: em(18);

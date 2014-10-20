@@ -3,7 +3,7 @@
 	Work
 */
 
-
+// Delete this crap
 header {
 	background: $pink;
 	height: 150px;
@@ -13,6 +13,8 @@ header {
 		display: none;
 	}
 }
+// / Delete this crap
+
 
 .work {
 
@@ -39,11 +41,13 @@ header {
 	}
 }
 
+
 p.partner,
 p.role {
 	@extend .small-title;
 	margin: 2em 0 0;
 }
+
 
 .role-list {
 	margin: 2px 0 1.5em;
@@ -102,7 +106,11 @@ p.role {
 		float: left;
 		margin: 0;
 		overflow: hidden;
-		width: 33.333333%;
+		width: 50%;
+		
+		&.small { 
+			width: 25%;
+		}
 		
 		&:hover {
 			

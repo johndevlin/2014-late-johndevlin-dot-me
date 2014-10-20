@@ -16,7 +16,7 @@ $('.open-contact-form-link').click(function(){
 });
 
 
-$('.close-contact-form-link').click(function(){
+$('.close-contact-form-link').click(function(){ 
 	$('body').removeClass('open-contact-form');
 });
 
@@ -25,11 +25,13 @@ $(window).load(function(){
 	
 	$('.masonry-feed').show();
  
-	$('.masonry-feed ul').isotope({
-
-
-	});
+	$('.masonry-feed ul').isotope();
 	
+});
+	
+BackgroundCheck.init({
+	targets: '.masonry-item',
+	images: '.work-item-artwork'
 });
 
 
