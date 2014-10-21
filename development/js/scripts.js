@@ -45,8 +45,14 @@ $(window).load(function(){
 
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
-	var itemWidth = $item.outerWidth(true);
-	$container.css({ width: $item * 4 }).isotope('layout');
+	
+	$('.masonry-feed ul').isotope({
+		resizable: false,
+		masonry: {
+			columnWidth: $container.width() / 4
+		},
+	})
+	
 });
 
 
