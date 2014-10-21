@@ -200,51 +200,60 @@
 			}
 		}
 
-		.work {
-
+		.container.masonry-feed {
+			
+			li.masonry-item {
+				@include display(flex);
+				@include flex-direction(column);
+				background: transparent;
+				border-bottom: 1px solid transparentize($base-colour, 0.7); 
+				margin-bottom: 1.25em;
+				padding-bottom: 1.25em;
+				
+				&:hover {
+					
+					aside {
+						@include transform(translateX(0));
+					}
+					
+					img {
+						@include transform(scale(1)translateY(0));
+						opacity: 1;
+					}
+				}
+			}
+			
 			h2 {
-				padding-bottom: 0;
+				background: transparent;
+				color: $base-colour;
+				font-size: em(30);
+				margin-bottom: 0.25em;
+				padding: 0;
 			}
-
-			aside {
-				border-top: none;
+			
+			img {
+				order: 2;
+				margin-bottom: 1em;
 			}
-
-			figure {
-				margin: 0 0 20px;
+			
+			.button {
+				order: 3;
+				@include transform(translateX(0%));
+				margin: 0;
+				opacity: 1;
+				position: static;
 			}
-
-			h2,
-			h3,
-			p.partner,
-			p.role,
-			.role-list,
-			p {
-				margin: 0 0 20px;
-				text-align: center;
-				width: 100%;
-			}
-
-			.role-list {
-				margin: 2px 0 25px;
-				padding-left: 0;
-				position: relative;
-
-				&:before {
+			
+			.copy-container {
+				order: 1;
+				position: static;
+				
+				aside {
 					display: none;
 				}
 			}
-
-			p {
-				text-align: left;
-			}
-
-			p.partner,
-			p.role {
-				margin-bottom: 0;
-			}
 		}
-		
+				
 		.main-content.work {
 			padding: 0 20px;
 		}
