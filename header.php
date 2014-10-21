@@ -80,8 +80,6 @@
 
 			<li><a href="/work/">Work</a></li>
 
-			<li><a href="/what-i-do/">What I Do</a></li>
-
 			<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 
 			<li><a class="return-false" href="#">Close</a></li>
@@ -102,8 +100,6 @@
 				<ul class="inline-list">
 
 					<li><a href="/work/">Work</a></li>
-
-					<li><a href="/what-i-do/">What I Do</a></li>
 
 					<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 
