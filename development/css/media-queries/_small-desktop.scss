@@ -1,6 +1,9 @@
 @if $bourbon-neat == true {
 	@include media($small-desktop) {
 
-
+		.container.masonry-feed .button {
+			@include transform(translateX(0)); 
+			@include position(absolute, null 20px 20px null);
+		}
 	}
 }
