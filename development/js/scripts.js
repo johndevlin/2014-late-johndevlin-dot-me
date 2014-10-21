@@ -20,15 +20,12 @@ $('.close-contact-form-link').click(function(){
 	$('body').removeClass('open-contact-form');
 });
 
-
-$('.masonry-feed ul').isotope();
-
 $(window).load(function(){
 	
 	$('.masonry-feed').show();
 	
 	var container = $('.masonry-feed ul');
-	var item = container.find('.masonry-feed li').eq(0); 
+	var item = container.find('.masonry-item').eq(0); 
 	
 	$('.masonry-feed ul').isotope({
 		resizable: false,
