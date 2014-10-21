@@ -20,36 +20,33 @@ $('.close-contact-form-link').click(function(){
 	$('body').removeClass('open-contact-form');
 });
 
+
+
+	
+var $container = $('.masonry-feed ul');
+var $item = $container.find('.masonry-item').eq(0); 
+
 $(window).load(function(){
 	
 	$('.masonry-feed').show();
 	
-	var container = $('.masonry-feed ul');
-	var item = container.find('.masonry-item').eq(0); 
-	
-	$('.masonry-feed ul').isotope({
-		resizable: false,
-		masonry: {
-			columnWidth: container.width() / 4
-		},
-	});
-	
-	$(window).smartresize(function(){
-		var itemWidth = $item.outerWidth(true);
-		container.css({ width: item * 4 }).isotope('reLayout');
-	}).smartresize();
+	// Load Isotop if the browser is bigger than 767px
+	if ($(window).width() > 767) {
+		
+		$('.masonry-feed ul').isotope({
+			resizable: false,
+			masonry: {
+				columnWidth: $container.width() / 4
+			},
+		});
+	}
 	
 });
-	
-BackgroundCheck.init({
-	targets: '.masonry-item',
-	images: '.work-item-artwork'
-});
-
 
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
-	// Guff
+	var itemWidth = $item.outerWidth(true);
+	$container.css({ width: $item * 4 }).isotope('layout');
 });
 
 
