@@ -70,7 +70,7 @@ $('input, textarea').placeholder();
 $(document).keyup(function(e) {
 	
 	if (e.keyCode == 27) { 
-		$('.masonry-feed ul').isotope('shuffle');
+		
 	}
 	
 }); 
