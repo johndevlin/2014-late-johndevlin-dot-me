@@ -56,61 +56,6 @@
 			}
 		}
 	}
-
-	p.partner,
-	p.role {
-		@extend .small-title;
-		color: #999999;
-		font-size: 18px;
-		margin: 1.5em 0 0;
-		text-transform: uppercase;
-	}
-
-
-	.role-list {		color: $base-colour;
-		font-size: 18px;
-	}
-	
-	
-	li.masonry-item {
-		@include transition (all 0.5s ease-in-out);
-		background: darken($background-colour, 5%);
-		display: block;
-		float: left;
-		margin: 0;
-		overflow: hidden;
-		width: 50%;
-		
-		&.small { 
-			width: 25%;
-			
-			h2 {
-				font-size: em(32);
-			}
-			
-			p.partner,
-			p.role {
-				margin: 1.25em 0 0;
-			}
-		}
-		
-		// Show content on hover
-		&:hover {
-			
-			aside {
-				@include transform(translateX(0));
-			}
-			
-			img {
-				@include transform(scale(1)translateY(25%));
-				opacity: 0;
-			}
-			
-			.button {
-				opacity: 1;
-			}
-		}
-	}
 	
 	aside {
 		@include transform(translateX(-200%));
@@ -137,7 +82,91 @@
 	}
 }
 
+p.partner,
+p.role {
+	@extend .small-title;
+	color: #999999;
+	font-size: 18px;
+	margin: 1.5em 0 0;
+	text-transform: uppercase;
+}
 
+
+.role-list {		
+	color: $base-colour;
+	font-size: 18px;
+}
+
+
+li.masonry-item {
+	background: darken($background-colour, 5%);
+	display: block;
+	float: left;
+	margin: 0;
+	opacity: 0;
+	overflow: hidden;
+	width: 50%;
+	
+	&.small { 
+		width: 25%;
+		
+		h2 {
+			font-size: em(32);
+		}
+		
+		p.partner,
+		p.role {
+			margin: 1.25em 0 0;
+		}
+	}
+	
+	// Show content on hover
+	&:hover {
+		
+		aside {
+			@include transform(translateX(0));
+		}
+		
+		img {
+			@include transform(scale(1)translateY(25%));
+			opacity: 0;
+		}
+		
+		.button {
+			opacity: 1;
+		}
+	}
+}
+
+
+
+.isotope-loaded li.masonry-item {
+	@include animation-name(fadein);
+	@include animation-duration(0.6s);
+	@include animation-timing-function(ease);
+	@include animation-iteration-count(1); 
+	@include animation-fill-mode(forwards);
+	
+	@for $item from 1 through 10 {
+		&:nth-child(#{$item}){
+			@include animation-delay(0.7s * $item); 
+		}
+	}
+}
+
+
+
+// Animating Isotope images
+@include keyframes(fadein) {
+	0%{
+		opacity: 0;
+		@include transform(translateY(20px));
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(0px));
+	}
+}
 
 
 

@@ -26,16 +26,14 @@
 		}
 
 		
-		.container.masonry-feed {
+		li.masonry-item {
+			width: 100%;
 			
-			li.masonry-item {
+			&.small { 
 				width: 100%;
-				
-				&.small { 
-					width: 100%;
-				}
 			}
 		}
+		
 
 	}
 }

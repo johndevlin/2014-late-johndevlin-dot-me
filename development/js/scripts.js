@@ -42,6 +42,8 @@ $(window).load(function(){
 		});
 	}
 	
+	$('html').addClass('isotope-loaded');
+	
 });
 
 // Debounced Resize function

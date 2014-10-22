@@ -199,27 +199,6 @@
 
 		.container.masonry-feed {
 			
-			li.masonry-item {
-				@include display(flex);
-				@include flex-direction(column);
-				background: transparent;
-				border-bottom: 1px solid transparentize($base-colour, 0.7); 
-				margin-bottom: 0;
-				padding-bottom: 1.25em;
-				
-				&:hover {
-					
-					aside {
-						@include transform(translateX(0));
-					}
-					
-					img {
-						@include transform(scale(1)translateY(0));
-						opacity: 1;
-					}
-				}
-			}
-			
 			h1 {
 				text-align: left;
 			}
@@ -253,6 +232,27 @@
 				
 				aside {
 					display: none;
+				}
+			}
+		}
+		
+		li.masonry-item {
+			@include display(flex);
+			@include flex-direction(column);
+			background: transparent;
+			border-bottom: 1px solid transparentize($base-colour, 0.7); 
+			margin-bottom: 0;
+			padding-bottom: 1.25em;
+			
+			&:hover {
+				
+				aside {
+					@include transform(translateX(0));
+				}
+				
+				img {
+					@include transform(scale(1)translateY(0));
+					opacity: 1;
 				}
 			}
 		}
