@@ -25,7 +25,7 @@
 
 					<ul class="inline-list role-list">
 						<li>
-							Front-end Development
+							Front-End Development
 						</li>
 						<li>
 							RWD
@@ -68,11 +68,11 @@
 							RWD
 						</li>
 						<li>
-							Front-end Development
+							Front-End Development
 						</li>
 					</ul>
 
-					<p>Carson McDowell are a Belfast based law firm. I was the lead designer and front-end developer on the website. My job was to design and develop responsive interface to to go along with Carson McDowell&#8217;s new branding &amp; identity.</p>
+					<p>Carson McDowell are a Belfast based law firm. I was the lead designer and Front-End developer on the website. My job was to design and develop responsive interface to to go along with Carson McDowell&#8217;s new branding &amp; identity.</p>
 
 					<a class="button" href="#">View site</a>
 

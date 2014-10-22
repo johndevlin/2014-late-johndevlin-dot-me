@@ -1581,7 +1581,8 @@ var $item = $container.find('.masonry-item').eq(0);
 
 $(window).load(function(){
 	
-	$('.masonry-feed').show();
+	$('.preloader').hide();
+	$('.masonry-feed ul').show();
 	
 	// Load Isotop if the browser is bigger than 767px
 	if ($(window).width() > 767) {

@@ -41,18 +41,18 @@
 			width: 100%;
 			z-index: 2;
 
-			 ul {
+			ul {
 			 	padding: 20px 20px 0;
 			 	margin: 0;
-			 }
+			}
 
-			 li {
+			li {
 			 	font-family: $armata;
 				font-size: em(14);
 				letter-spacing: 0.05em;
 				margin-bottom: 1.5em;
 				text-transform: uppercase;
-			 }
+			}
 
 			a {
 				color: $bg-colour;
@@ -115,27 +115,24 @@
 		}
 
 		h1 {
-			font-size: em(42);
+			font-size: em(36);
 			line-height: 1.1;
 			margin: 0 0 40px;
 		}
 
 		h2 {
-			font-size: em(30);
+			font-size: em(24);
 		}
 
 		h3 {
-			font-size: em(23);
+			font-size: em(21);
 		}
 
 		h4 {
-			font-size: em(20);
+			font-size: em(18);
 		}
 
-		h5 {
-			font-size: em(16);
-		}
-
+		h5,
 		h6 {
 			font-size: em(16);
 		}
@@ -207,7 +204,7 @@
 				@include flex-direction(column);
 				background: transparent;
 				border-bottom: 1px solid transparentize($base-colour, 0.7); 
-				margin-bottom: 1.25em;
+				margin-bottom: 0;
 				padding-bottom: 1.25em;
 				
 				&:hover {
@@ -223,21 +220,26 @@
 				}
 			}
 			
+			h1 {
+				text-align: left;
+			}
+			
 			h2 {
 				background: transparent;
 				color: $base-colour;
-				font-size: em(30);
+				font-size: em(24);
 				margin-bottom: 0.25em;
 				padding: 0;
 			}
 			
 			img {
 				order: 2;
-				margin-bottom: 1em;
+				-webkit-order: 2;
 			}
 			
 			.button {
 				order: 3;
+				-webkit-order: 3;
 				@include transform(translateX(0%));
 				margin: 0;
 				opacity: 1;
@@ -246,6 +248,7 @@
 			
 			.copy-container {
 				order: 1;
+				-webkit-order: 1;
 				position: static;
 				
 				aside {

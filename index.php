@@ -7,6 +7,8 @@
 				Latest work
 			</h1>
 			
+			<div class="preloader"></div>
+			
 			<ul class="unstyled-list">
 				
 				<!-- Project: The Restart Page -->
@@ -28,7 +30,7 @@
 							<p class="role">Role</p>
 							
 							<p class="role-list">
-								Front-end Development
+								Front-End Development
 							</p>
 
 						</aside>
@@ -68,7 +70,7 @@
 							<p class="role">Role</p>
 
 							<p class="role-list">
-								Lead Design, RWD, Front-end Development
+								Lead Design, RWD, Front-End Development
 							</p>
 
 						</aside>
@@ -106,7 +108,7 @@
 							<p class="role">Role</p>
 							
 							<p class="role-list">
-								Lead Design, RWD, Front-end Development, CMS Integration
+								Lead Design, RWD, Front-End Development, CMS Integration
 							</p>
 
 						</aside>
@@ -144,7 +146,7 @@
 							<p class="role">Role</p>
 							
 							<p class="role-list">
-								Lead Design, RWD, Front-end Development
+								Lead Design, RWD, Front-End Development
 							</p>
 
 						</aside>
@@ -181,7 +183,7 @@
 							<p class="role">Role</p>
 
 							<p class="role-list">
-								RWD, Front-end Development
+								RWD, Front-End Development
 							</p>
 
 						</aside>
