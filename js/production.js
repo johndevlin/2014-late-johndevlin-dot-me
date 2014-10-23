@@ -1566,7 +1566,7 @@ $('.mobile-nav a').click(function(){
 $('.open-contact-form-link').click(function(){
 	$('body').addClass('open-contact-form');
 	$('body').removeClass('open-nav');
-});
+}); 
 
 
 $('.close-contact-form-link').click(function(){ 
