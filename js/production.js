@@ -1556,21 +1556,25 @@ $.extend($.fn, {
 // Hide / Show mobile navigation
 $('.open-nav-btn').click(function(){
 	$('body').addClass('open-nav');
+	$('body').addClass('blur');
 });
 
 $('.mobile-nav a').click(function(){
 	$('body').removeClass('open-nav');
+	$('body').removeClass('blur');
 });
 
 // Hide / Show contact form
 $('.open-contact-form-link').click(function(){
 	$('body').addClass('open-contact-form');
 	$('body').removeClass('open-nav');
+	$('body').addClass('blur');
 }); 
 
 
 $('.close-contact-form-link').click(function(){ 
 	$('body').removeClass('open-contact-form');
+	$('body').removeClass('blur');
 });
 
 

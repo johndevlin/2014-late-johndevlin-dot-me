@@ -41,3 +41,12 @@ hr {
 	margin: 1em 0;
 }
 
+.blur {
+	
+	header,
+	div.main-content,
+	footer {
+		@include filter(blur(7px));
+	}
+}
+

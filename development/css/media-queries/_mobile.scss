@@ -244,6 +244,10 @@
 			margin-bottom: 1.25em;
 			padding-bottom: 1.5em;
 			
+			&.small h2 {
+				font-size: em(24);
+			}
+			
 			&:hover {
 				
 				aside {
@@ -254,6 +258,12 @@
 					@include transform(scale(1)translateY(0));
 					opacity: 1;
 				}
+			}
+			
+			&:last-child {
+				border-bottom: none; 
+				margin-bottom: 0;
+				padding-bottom: 0;
 			}
 		}
 				
