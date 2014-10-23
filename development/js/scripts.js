@@ -34,7 +34,7 @@ $(window).load(function(){
 	// Load Isotop if the browser is bigger than 767px
 	if ($(window).width() > 767) {
 		
-		$('.masonry-feed ul').isotope({
+		$container.isotope({
 			resizable: false,
 			masonry: {
 				columnWidth: $container.width() / 4
@@ -49,12 +49,16 @@ $(window).load(function(){
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	
-	$('.masonry-feed ul').isotope({
-		resizable: false,
-		masonry: {
-			columnWidth: $container.width() / 4
-		},
-	})
+	if ($(window).width() > 767) {
+		$container.isotope('destroy');
+		
+		$container.isotope({
+			resizable: false,
+			masonry: {
+				columnWidth: $container.width() / 4
+			},
+		});
+	}
 	
 });
 

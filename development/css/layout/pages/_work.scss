@@ -23,6 +23,7 @@
 	
 	ul {
 		@include clearfix;
+		@include transition (height 0.5s ease-in-out);
 		display: none;
 	}
 	
@@ -38,14 +39,14 @@
 		background: transparentize($base-colour, 0.1);
 		color: $background-colour;
 		font-size: em(36);
-		margin-bottom: 0;
+		margin: 0;
 		padding: 0.375em 0.5em;
 		text-align: left;
 	}
 
 	h3 {
 		@extend %base-typeface;
-		margin-bottom: 1em;
+		margin: 0 0 1em;
 
 		a {
 			color: $body-colour;
