@@ -34,7 +34,7 @@
 
 					<p>The Restart Page is an interactive website that allows you to run through the re-boot process of a selection of legacy operating systems. One of the highlights of working on this project was the reaction it received across the web. It was mentioned by <a href="http://daringfireball.net/linked/2012/01/07/restart">John Gruber on Daring Fireball</a>, and made it to the <a href="http://cl.ly/TEsc">front page of Reddit</a>.</p>
 
-					<a class="button" href="#">View site</a>
+					<a class="button" href="#" target="_blank">View site</a>
 
 				</aside>
 
@@ -74,7 +74,7 @@
 
 					<p>Carson McDowell are a Belfast based law firm. I was the lead designer and Front-End developer on the website. My job was to design and develop responsive interface to to go along with Carson McDowell&#8217;s new branding &amp; identity.</p>
 
-					<a class="button" href="#">View site</a>
+					<a class="button" href="#" target="_blank">View site</a>
 
 				</aside>
 

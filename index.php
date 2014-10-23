@@ -37,7 +37,7 @@
 					
 					</div>
 					
-					<a class="button" href="http://www.therestartpage.com">View site</a>
+					<a class="button" href="http://www.therestartpage.com" target="_blank">View site</a>
 
 					<img class="work-item-artwork" 
 						alt="The Restart Page" 
@@ -77,7 +77,7 @@
 					
 					</div>
 					
-					<a class="button" href="http://www.carson-mcdowell.com">View site</a>
+					<a class="button" href="http://www.carson-mcdowell.com" target="_blank">View site</a>
 
 					<img class="work-item-artwork" 
 						alt="Carson McDowell" 
@@ -115,7 +115,7 @@
 						
 					</div>
 					
-					<a class="button" href="http://baxterpr.co.uk">View site</a>
+					<a class="button" href="http://baxterpr.co.uk" target="_blank">View site</a>
 
 					<img class="work-item-artwork" 
 						alt="Baxter" 
@@ -152,7 +152,7 @@
 						</aside>
 					</div>
 					
-					<a class="button" href="http://www.killerdevelopments.com">View site</a>
+					<a class="button" href="http://www.killerdevelopments.com" target="_blank">View site</a>
 
 					<img class="work-item-artwork" 
 						alt="Killer" 
@@ -189,7 +189,7 @@
 						</aside>
 					</div>
 					
-					<a class="button" href="http://nettzer.com/">View site</a>
+					<a class="button" href="http://nettzer.com/" target="_blank">View site</a>
 
 					<img class="work-item-artwork" 
 						alt="Nettzer" 
