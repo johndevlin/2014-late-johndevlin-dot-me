@@ -41,18 +41,18 @@
 			width: 100%;
 			z-index: 2;
 
-			 ul {
+			ul {
 			 	padding: 20px 20px 0;
 			 	margin: 0;
-			 }
+			}
 
-			 li {
+			li {
 			 	font-family: $armata;
 				font-size: em(14);
 				letter-spacing: 0.05em;
 				margin-bottom: 1.5em;
 				text-transform: uppercase;
-			 }
+			}
 
 			a {
 				color: $bg-colour;
@@ -115,27 +115,24 @@
 		}
 
 		h1 {
-			font-size: em(42);
+			font-size: em(36);
 			line-height: 1.1;
 			margin: 0 0 40px;
 		}
 
 		h2 {
-			font-size: em(30);
+			font-size: em(24);
 		}
 
 		h3 {
-			font-size: em(23);
+			font-size: em(21);
 		}
 
 		h4 {
-			font-size: em(20);
+			font-size: em(18);
 		}
 
-		h5 {
-			font-size: em(16);
-		}
-
+		h5,
 		h6 {
 			font-size: em(16);
 		}
@@ -200,49 +197,68 @@
 			}
 		}
 
-		.work {
-
+		.container.masonry-feed {
+			
+			h1 {
+				text-align: left;
+			}
+			
 			h2 {
-				padding-bottom: 0;
+				background: transparent;
+				color: $base-colour;
+				font-size: em(24);
+				margin-bottom: 0.75em;
+				padding: 0;
 			}
-
-			aside {
-				border-top: none;
+			
+			img {
+				order: 2;
+				-webkit-order: 2;
 			}
-
-			figure {
-				margin: 0 0 20px;
+			
+			.button {
+				order: 3;
+				-webkit-order: 3;
+				@include transform(translateX(0%));
+				margin: 0;
+				opacity: 1;
+				position: static;
 			}
-
-			h2,
-			h3,
-			p.partner,
-			p.role,
-			.role-list,
-			p {
-				margin: 0 0 20px;
-				text-align: center;
-				width: 100%;
-			}
-
-			.role-list {
-				margin: 2px 0 25px;
-				padding-left: 0;
-				position: relative;
-
-				&:before {
+			
+			.copy-container {
+				order: 1;
+				-webkit-order: 1;
+				position: static;
+				
+				aside {
 					display: none;
 				}
 			}
-
-			p {
-				text-align: left;
+		}
+		
+		li.masonry-item {
+			@include display(flex);
+			@include flex-direction(column);
+			background: transparent;
+			border-bottom: 1px solid transparentize($base-colour, 0.7); 
+			margin-bottom: 1.25em;
+			padding-bottom: 1.5em;
+			
+			&:hover {
+				
+				aside {
+					@include transform(translateX(0));
+				}
+				
+				img {
+					@include transform(scale(1)translateY(0));
+					opacity: 1;
+				}
 			}
-
-			p.partner,
-			p.role {
-				margin-bottom: 0;
-			}
+		}
+				
+		.main-content.work {
+			padding: 0 20px;
 		}
 
 		footer {

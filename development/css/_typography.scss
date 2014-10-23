@@ -30,30 +30,29 @@ h1, h2, h3, h4, h5, h6 {
 	@extend %heading-typeface;
 	color: $heading-colour;
 	line-height: 1.2;
-	margin: 0 0 1em; 
+	margin: 1em 0; 
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
 
 h1 {
-	font-size: em(65); 
-	line-height: 1.1;
-	margin: 0 0 40px;
+	font-size: em(56); 
+	margin: 1.5em 0; 
 }
 
 h2 {
-	font-size: em(40);
+	font-size: em(36);
 }
 
 h3 {
-	font-size: em(26); 
+	font-size: em(24); 
 }
 
 h4 {
-	font-size: em(22);
+	font-size: em(21);
 }
 
-h5 {
+h5{
 	font-size: em(18);
 }
 

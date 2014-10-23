@@ -1,6 +1,37 @@
 @if $bourbon-neat == true {
-	@include media($small-desktop) {
-
-
+	
+	@media screen and (max-width: 1250px) {
+		
+		.container.masonry-feed .button {
+			bottom: 20px;
+		}
 	}
+	
+	@include media($small-desktop) {
+		
+		h1 {
+			font-size: em(42); 
+			margin: 1em 0; 
+		}
+
+
+		.container.masonry-feed .button {
+			@include transform(translateX(0)); 
+			@include position(absolute, null 0 0 0);
+			background: $base-colour;
+			color: $bg-colour;
+			text-align: center;
+			width: 100%;
+		}
+		
+		// .container.masonry-feed .button {
+		// 	@include transform(translateX(0)); 
+		// 	@include position(absolute, null 0 0 0);
+		// 	background: $base-colour;
+		// 	color: $bg-colour;
+		// 	text-align: center;
+		// 	width: 100%;
+		// }
+	}
+	
 }

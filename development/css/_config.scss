@@ -69,7 +69,7 @@ $merriweather: 'Merriweather', Georgia, Times, "Times New Roman", serif;
 %heading-typeface {
 	font-family: $armata;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 }
 
 %light-heading-typeface {
@@ -105,7 +105,7 @@ $bourbon-neat: true!default;
 
 /* A.2: Fill out the maximum width, and number of grids for Desktop, Tablet and Mobile */ 
 
-$desktop-width: 1140px!default;
+$desktop-width: 1200px!default;
 $desktop-grids: 12!default;
 
 $small-desktop-width: 1139px!default;

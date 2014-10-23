@@ -16,14 +16,50 @@ $('.open-contact-form-link').click(function(){
 });
 
 
-$('.close-contact-form-link').click(function(){
+$('.close-contact-form-link').click(function(){ 
 	$('body').removeClass('open-contact-form');
 });
 
 
+
+	
+var $container = $('.masonry-feed ul');
+var $item = $container.find('.masonry-item').eq(0); 
+
+$(window).load(function(){
+	
+	$('.preloader').hide();
+	$('.masonry-feed ul').show();
+	
+	// Load Isotop if the browser is bigger than 767px
+	if ($(window).width() > 767) {
+		
+		$container.isotope({
+			resizable: false,
+			masonry: {
+				columnWidth: $container.width() / 4
+			},
+		});
+	}
+	
+	$('html').addClass('isotope-loaded');
+	
+});
+
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
-	// Guff
+	
+	if ($(window).width() > 767) {
+		$container.isotope('destroy');
+		
+		$container.isotope({
+			resizable: false,
+			masonry: {
+				columnWidth: $container.width() / 4
+			},
+		});
+	}
+	
 });
 
 
@@ -41,7 +77,7 @@ $('input, textarea').placeholder();
 $(document).keyup(function(e) {
 	
 	if (e.keyCode == 27) { 
-		// Guff
+		
 	}
 	
 }); 

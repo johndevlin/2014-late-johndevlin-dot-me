@@ -80,8 +80,6 @@
 
 			<li><a href="/work/">Work</a></li>
 
-			<li><a href="/what-i-do/">What I Do</a></li>
-
 			<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 
 			<li><a class="return-false" href="#">Close</a></li>
@@ -103,21 +101,11 @@
 
 					<li><a href="/work/">Work</a></li>
 
-					<li><a href="/what-i-do/">What I Do</a></li>
-
 					<li><a class="return-false open-contact-form-link" href="#">Contact</a></li>
 
 					<li>
 					
 						<a class="social-link icon-twitter" target="_blank" href="https://twitter.com/john_devlin">Twitter</a>
-						
-						<div class="tooltip">
-						
-							<p class="icon-twitter"></p>
-							
-							<p class="handle">@John_Devlin</p>
-						
-						</div>
 							
 					</li>
 
@@ -125,27 +113,11 @@
 					
 						<a class="social-link icon-github" target="_blank" href="https://github.com/johndevlin/">Github</a>
 						
-						<div class="tooltip">
-						
-							<p class="icon-github"></p>
-							
-							<p class="handle">/johndevlin</p>
-						
-						</div>
-						
 					</li>
 
 					<li>
 					
 						<a class="social-link icon-dribbble" target="_blank" href="https://dribbble.com/John_Devlin">Dribbble</a>
-						
-						<div class="tooltip">
-						
-							<p class="icon-dribbble"></p>
-							
-							<p class="handle">/John_Devlin</p>
-						
-						</div>
 						
 					</li>
 

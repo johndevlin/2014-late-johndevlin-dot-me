@@ -25,5 +25,15 @@
 			}
 		}
 
+		
+		li.masonry-item {
+			width: 100%;
+			
+			&.small { 
+				width: 100%;
+			}
+		}
+		
+
 	}
 }
