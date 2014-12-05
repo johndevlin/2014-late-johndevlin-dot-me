@@ -76,7 +76,7 @@
 	.button {
 		@include transform(translateX(-50%));
 		@include position(absolute, null null 50px 50%);
-		@include transition (all 0.3s ease-in-out);
+		@include transition (all 0.2s ease-in-out);
 		font-size: em(18);
 		opacity: 0;
 		z-index: 5;
